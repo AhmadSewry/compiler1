@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Products</title>
+</head>
+<body>
+<h1>Products</h1>
+<a href="{{ url_for('add') }}">Add Product</a>
+<hr>
+<ul>
+    {% for product in products %}
+    <li>
+        <a href="{{ url_for('product_details', index=loop.index0) }}">
+            {{ product.name }} - ${{ product.price }}
+        </a>
+        {% if product.image %}
+        <img src="{{ url_for('static', filename='uploads/' + product.image) }}" width="100">
+        {% endif %}
+    </li>
+    {% endfor %}
+</ul>
+</body>
+</html>
