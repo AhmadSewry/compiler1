@@ -5,7 +5,7 @@ import java.util.List;
 public class HtmlTagNode extends HtmlAstNode {
 
     public String tagName;
-    public List<HtmlAstNode> children;
+    public List<HtmlAstNode> children;//محتوى التاغ
 
     public HtmlTagNode(String tagName, List<HtmlAstNode> children, List<HtmlAstNode> htmlAstNodes) {
         this.tagName = tagName;
