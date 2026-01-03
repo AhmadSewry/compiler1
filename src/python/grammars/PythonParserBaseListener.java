@@ -1,4 +1,4 @@
-// Generated from C:/Users/LENOVO/IdeaProjects/compiler1/src/python/grammars/PythonParser.g4 by ANTLR 4.13.2
+// Generated from C:/Users/mazen/Desktop/compiler1/src/python/grammars/PythonParser.g4 by ANTLR 4.13.2
 package python.grammars;
 
 import org.antlr.v4.runtime.ParserRuleContext;

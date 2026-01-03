@@ -1,4 +1,4 @@
-// Generated from C:/Ahmad/compiler/src/html/grammars/HtmlParser.g4 by ANTLR 4.13.2
+// Generated from C:/Users/mazen/Desktop/compiler1/src/html/grammars/HtmlParser.g4 by ANTLR 4.13.2
 package html.grammars;
 
 
@@ -89,4 +89,40 @@ public interface HtmlParserVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitJinjaEndIf(HtmlParser.JinjaEndIfContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link HtmlParser#style_block}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitStyle_block(HtmlParser.Style_blockContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link HtmlParser#css_rule}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitCss_rule(HtmlParser.Css_ruleContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link HtmlParser#css_selector}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitCss_selector(HtmlParser.Css_selectorContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link HtmlParser#css_decl}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitCss_decl(HtmlParser.Css_declContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link HtmlParser#css_value}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitCss_value(HtmlParser.Css_valueContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link HtmlParser#css_atom}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitCss_atom(HtmlParser.Css_atomContext ctx);
 }

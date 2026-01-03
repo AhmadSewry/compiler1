@@ -18,6 +18,7 @@ html_program
 // ===============================
 html_item
     : html_tag
+    | style_block
     | jinja_block
     | html_text
     ;
@@ -41,7 +42,7 @@ html_tag
 //         JINJA BLOCKS
 // ===============================
 jinja_block
-    : (JINJA_VAR_OPEN | HTML_JINJA_VAR_OPEN)
+    : (JINJA_VAR_OPEN | HTML_JINJA_VAR_OPEN )
       jinja_var_expr
       JINJA_VAR_CLOSE
 
@@ -75,3 +76,35 @@ jinja_block
         | ENDIF                                          # JinjaEndIf
         ;
 
+
+// ===============================
+//         STYLE / CSS
+// ===============================
+style_block
+    : STYLE_OPEN css_rule* STYLE_CLOSE
+    ;
+
+css_rule
+    : css_selector CSS_LBRACE css_decl* CSS_RBRACE
+    ;
+
+css_selector
+    : CSS_IDENT
+    | CSS_DOT CSS_IDENT
+    | CSS_HASH CSS_IDENT
+    ;
+
+css_decl
+    : CSS_IDENT CSS_COLON css_value CSS_SEMI
+    ;
+
+css_value
+    : css_atom+
+    ;
+
+css_atom
+    : CSS_NUMBER
+    | CSS_UNIT
+    | CSS_STRING
+    | CSS_IDENT
+    ;

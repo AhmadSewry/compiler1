@@ -1,4 +1,4 @@
-// Generated from C:/Ahmad/compiler/src/html/grammars/HtmlParser.g4 by ANTLR 4.13.2
+// Generated from C:/Users/mazen/Desktop/compiler1/src/html/grammars/HtmlParser.g4 by ANTLR 4.13.2
 package html.grammars;
 
 
@@ -138,4 +138,64 @@ public interface HtmlParserListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitJinjaEndIf(HtmlParser.JinjaEndIfContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link HtmlParser#style_block}.
+	 * @param ctx the parse tree
+	 */
+	void enterStyle_block(HtmlParser.Style_blockContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link HtmlParser#style_block}.
+	 * @param ctx the parse tree
+	 */
+	void exitStyle_block(HtmlParser.Style_blockContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link HtmlParser#css_rule}.
+	 * @param ctx the parse tree
+	 */
+	void enterCss_rule(HtmlParser.Css_ruleContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link HtmlParser#css_rule}.
+	 * @param ctx the parse tree
+	 */
+	void exitCss_rule(HtmlParser.Css_ruleContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link HtmlParser#css_selector}.
+	 * @param ctx the parse tree
+	 */
+	void enterCss_selector(HtmlParser.Css_selectorContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link HtmlParser#css_selector}.
+	 * @param ctx the parse tree
+	 */
+	void exitCss_selector(HtmlParser.Css_selectorContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link HtmlParser#css_decl}.
+	 * @param ctx the parse tree
+	 */
+	void enterCss_decl(HtmlParser.Css_declContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link HtmlParser#css_decl}.
+	 * @param ctx the parse tree
+	 */
+	void exitCss_decl(HtmlParser.Css_declContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link HtmlParser#css_value}.
+	 * @param ctx the parse tree
+	 */
+	void enterCss_value(HtmlParser.Css_valueContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link HtmlParser#css_value}.
+	 * @param ctx the parse tree
+	 */
+	void exitCss_value(HtmlParser.Css_valueContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link HtmlParser#css_atom}.
+	 * @param ctx the parse tree
+	 */
+	void enterCss_atom(HtmlParser.Css_atomContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link HtmlParser#css_atom}.
+	 * @param ctx the parse tree
+	 */
+	void exitCss_atom(HtmlParser.Css_atomContext ctx);
 }

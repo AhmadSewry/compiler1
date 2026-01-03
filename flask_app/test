@@ -1,0 +1,174 @@
+def add(a, b):
+    a = 5
+    b = 4
+    print(a + b)
+
+---------
+
+def subtract():
+    a = 10
+    b = 4
+    print(a - b)
+
+-----------
+
+def divide():
+    x = 20
+    y = 4
+    print(x / y)
+
+--------------
+
+def multiply():
+    m = 6
+    n = 5
+    print(m * n)
+
+--------------
+
+x = 10
+y = 5
+def calculate(a, b):
+    result = a + b
+    print(result)
+    if result > 10:
+        z = result * 2
+        print(z)
+    else:
+        w = result - 1
+        print(w)
+    for i in items:
+        total = i + result
+        print(total)
+    while result < 50:
+        result = result + 5
+
+---------------
+
+
+x = 10
+y = 20
+def add(a, b):
+    result = a + b
+    print(result)
+    if result > 20:
+        message = "Big number"
+        print(message)
+    else:
+        message = "Small number"
+        print(message)
+    for i in items:
+        temp = i + result
+        print(temp)
+    while result < 100:
+        result = result + 10
+
+
+-----------------
+x = 1
+y = 9
+def calculate(a, b):
+    result = a + b
+    print(result)
+    if result > 10:
+        z = result * 2
+        print(z)
+    else:
+        w = result - 1
+        print(w)
+    for i in items:
+        total = i + result
+        print(total)
+    while result < 25:
+        result = result + 5
+
+-------------
+a = 3
+b = 7
+def process(x, y):
+    value = x * y
+    print(value)
+    if value >= 20:
+        t = value + 5
+        print(t)
+    else:
+        s = value - 2
+        print(s)
+    for n in numbers:
+        r = n * value
+        print(r)
+    while value < 40:
+        value = value + 4
+
+---------
+
+
+<h1>مرحبا {{ user.name }}</h1>
+
+{% for product in products %}
+<p>{{ product.price.value }}</p>
+{% endfor %}
+
+-----------
+
+<p>الرصيد الحالي: {{ account.balance }}</p>
+
+{% for transaction in transactions %}
+<span>{{ transaction.amount }}</span>
+{% endfor %}
+
+------------------
+<h1>تفاصيل المنتج</h1>
+
+<p><strong>الاسم:</strong> {{ product.name }}</p>
+<p><strong>السعر:</strong> {{ product.price }}$</p>
+<p><strong>الوصف:</strong> {{ product.description }}</p>
+
+<a href="/">العودة إلى القائمة</a>
+
+---------
+<h3>مرحبا {{ user.email }}</h3>
+
+{% for order in orders %}
+{% if order.total > 100 %}
+<p>{{ order.total }}</p>
+{% endif %}
+{% endfor %}
+
+---------
+<h3>مرحبا {{ user.email }}</h3>
+
+{% for order in orders %}
+{% if order.total %}
+<p>{{ order.total }}</p>
+{% endif %}
+{% endfor %}
+
+------------
+css
+<style>
+body {
+    margin: spacing px;
+}
+</style>
+
+<h1>مرحبا {{ user.name }}</h1>
+
+{% for product in products %}
+
+<p>{{ product.price.value }}</p>
+
+{% endfor %}
+
+---------
+<style>
+body {
+    padding: size px;
+}
+</style>
+
+<h2>أهلاً {{ user.username }}</h2>
+
+{% for item in items %}
+<p>{{ item.name }}</p>
+{% endfor %}

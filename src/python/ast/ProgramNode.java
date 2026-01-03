@@ -4,20 +4,24 @@ import java.util.List;
 
 public class ProgramNode extends PythonAstNode {
 
-    public List<StatementNode> statements;
+    private final List<PythonAstNode> statements;
 
-    public ProgramNode(List<StatementNode> statements) {
+    public ProgramNode(List<PythonAstNode> statements) {
         this.statements = statements;
     }
 
-    @Override
-    public void printTree(String indent, boolean last) {
-        printIndent(indent, last);
-        System.out.println("PythonProgram");
+    public List<PythonAstNode> getStatements() {
+        return statements;
+    }
 
-        indent += last ? "   " : "│  ";
+    @Override
+    public void printTree(String indent, boolean isLast) {
+        System.out.print(indent);
+        System.out.println("└─ PythonProgram");
+
+        String childIndent = indent + "   ";
         for (int i = 0; i < statements.size(); i++) {
-            statements.get(i).printTree(indent, i == statements.size() - 1);
+            statements.get(i).printTree(childIndent, i == statements.size() - 1);
         }
     }
 }
